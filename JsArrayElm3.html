@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>Looping an Array</h2>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Pineapple", "Orange", "Banana", "Mango", "Guava"];
+let fLen = fruits.length;
+
+let text = "<select><option>--select--</option>";
+for (let i = 0; i < fLen; i++) {
+  text += "<option>" + fruits[i] + "</option>";
+}
+text += "</select>";
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
